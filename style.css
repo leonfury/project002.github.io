@@ -4,7 +4,6 @@
 	}
 }
 
-
 aside h5 {
 	padding-left: 5px;
 }
@@ -13,20 +12,40 @@ aside h6 {
 	padding-left: 20px;
 }
 
+aside a{
+	color: black !important;
+	text-decoration: none !important;
+}
+
 section {
 	padding-left: 10px !important;
 	padding-right: 10px !important;
 }
 
-.oalt1 {
-	background: gray !important;
+/*body section design*/
+.oshadow1 {
+	box-shadow: 5px 5px gainsboro !important;
+}
 
+.oalt1 {
+	background: whitesmoke !important;
 }
 
 .oalt2 {
-	background: silver;
+	background: snow !important;
 }
 
+/*for gallery section*/
+.imgDim {
+	width: 100% !important;
+	opacity: 0.7;
+}
+
+.forImg a:hover {
+	opacity: 1.0;
+}
+
+/*flex box section*/
 .flexItem0 {
 	background: aqua;
 	text-align: center;
@@ -35,24 +54,20 @@ section {
 	height: 30px;
 }
 
-.oHeight0 {
+/*define flexbox parent height*/
+.oHeight0 { 
 	height: 80px !important;
 }
 
+/*define flexbox parent height*/
 .oHeight1 {
 	height: 200px !important;
 }
 
-aside a{
-	color: black !important;
-	text-decoration: none !important;
-}
+/*for modal input box*/
+.o-form-border {
+	border: none !important;
+	border-radius: 0px !important;
+	border-bottom: 1px solid gray !important;
 
-.imgDim {
-	width: 100% !important;
-	opacity: 0.7;
-}
-
-.forImg a:hover {
-	opacity: 1.0;
 }

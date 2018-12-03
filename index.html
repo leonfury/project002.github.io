@@ -10,7 +10,7 @@
 <body>
 <div class="w-100">
 	<!-- bootstrap navbar begin -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light w-100 fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-light w-100 fixed-top bg-light border-bottom">
 	  <a class="navbar-brand" href="#">LIBRARY</a>
 	  <!-- nav bar button in mobile -->
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +19,7 @@
 	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 	  	<!-- navbar items -->
 	    <div class="navbar-nav">
-	    <a class="nav-item nav-link active" href="#">Home</a>
+	    <a class="nav-item nav-link active" href="https://leonfury.github.io/">Home</a>
 	      <a class="nav-item nav-link active" href="#oAbout">About</a>
 	      
 			<!-- dropdown for gallery begin -->
@@ -72,8 +72,8 @@
 	<div class="container-fluid d-flex pl-0 pr-0 w-100 no-gutters justify-content-start" style="padding-top: 55px; ">
 
 <!-- sidebar -->
-		<aside class="bg-light killMobile pr-5 pt-1 col-lg-2 col-xl-2" style="position: sticky; height: 98vh; top:55px">
-			<h5><a href="#"> Home </a> </h5>
+		<aside class="killMobile pr-5 pt-1 col-lg-2 col-xl-2 oshadow1" style="background: aquamarine;position: sticky; height: 98vh; top:55px; ">
+			<h5><a href="https://leonfury.github.io/"> Home </a> </h5>
 			<h5><a href="#oAbout"> About </a> </h5>
 			
 			<h5> <a href="#oGalCar">Gallery </a></h5>
@@ -89,7 +89,7 @@
 			<h6> Pulse </h6>
 			<h6> Radiance </h6>
 
-			<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#ologin">
+			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#ologin">
 				Login Here
 			</button>
 
@@ -97,6 +97,7 @@
 
 <!-- content -->
 		<article class="bg-light">
+<!-- about me -->
 			<section id="oAbout" class="border-bottom oalt1"> 
 				<div> <br/> <br/><br/> </div>
 				<h5> About </h5>
@@ -137,18 +138,12 @@
 							
 						</div> -->
 					</div>
-
 				</div>
-
-
-
-
-					
 				<div id="oGalCar"> <br/><br/></div>
 			</section>
-				
 
-			<section> 
+<!-- gallery section -->
+			<section class="oalt2"> 
 				<h5> GALLERY </h5>
 
 				<!-- CASE Carousel -->
@@ -191,10 +186,10 @@
 					<!-- bootstrap carouel end -->
 				</div>
 				<!-- CASE Carousel END -->
-				<div id="oGalFB"> <br/><br/><br/></div>
+				<div id="oGalFB" class="oalt1"> <br/><br/><br/></div>
 
 				<!-- CASE Gallery Flex -->
-				<div class="border-bottom pb-4">
+				<div class="border-bottom pb-4 oalt1">
 					<h5> Gallery - Flexbox </h5>
 					<div class="forImg d-flex row">
 						<a class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 m-2 imgDim"> <img src="images/Photo01.jpg" style="width:100%"/> </a>
@@ -218,7 +213,7 @@
 			</section>
 
 			<section> 
-				<div id="oFBSR"> <br/><br/><br/></div>
+				<div id="oFBSR" class="oalt2"> <br/><br/><br/></div>
 				<h4> FLEXBOXES </h4>
 
 				<!-- category start insert color ------------------------------------------------------------------------------- --> 
@@ -372,11 +367,11 @@
 				</div>
 				<!-- category end -->
 				<!-- to skip navbar -->
-				<div id="oFBMR"> <br/> <br/><br/></div>
+				<div id="oFBMR" class="oalt1"> <br/> <br/><br/></div>
 
 
 				<!-- category start insert color ------------------------------------------------------------------------------- --> 
-				<div class="">
+				<div class="oalt1">
 					<h5> Flexbox - Multiple Row Items </h5>
 
 				<!-- CASE 1 -->
@@ -608,10 +603,10 @@
 				</div>
 				<!-- category end -->
 				<!-- to skip navbar -->
-				<div id="oFBSA"> <br/> <br/><br/></div>
+				<div id="oFBSA" class="oalt2"> <br/> <br/><br/></div>
 
 				<!-- category start insert color ------------------------------------------------------------------------------- --> 
-				<div class="">
+				<div class="oalt2">
 					<h5> Flexbox - Spacing Around! </h5>
 
 				<!-- CASE 1 -->
