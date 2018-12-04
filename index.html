@@ -10,7 +10,7 @@
 <body>
 <div class="w-100">
 	<!-- bootstrap navbar begin -->
-	<nav class="navbar navbar-expand-lg navbar-light w-100 fixed-top bg-light border-bottom ">
+	<nav class="navbar navbar-expand-lg navbar-light w-100 fixed-top bg-light border-bottom">
 	  <a class="navbar-brand" href="#">LIBRARY</a>
 	  <!-- nav bar button in mobile -->
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,13 +49,9 @@
 
 			<!-- dropdown for CSS Animations begin -->
 			<div class="dropdown">
-			  <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  <a class="btn btn-light" href="#oCSS" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			     CSS Animations </a>
 
-			  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-			    <a class="dropdown-item" href="#oGallery"> CSS Animations </a>
-			    <a class="dropdown-item" href="#"> CSS Animations </a>
-			  </div>
 
 			<button type="button" class="btn btn-light" data-toggle="modal" data-target="#ologin">
 					Login Here
@@ -85,9 +81,8 @@
 			<h6><a href="#oFBMR">Multiple Row</a></h6>
 			<h6><a href="#oFBSA">Spacing Around</a></h6>
 
-			<h5> CSS Animations </h5>
-			<h6> Pulse </h6>
-			<h6> Radiance </h6>
+			<h5><a href="#oCSS">CSS Animations </a></h5>
+
 
 			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#ologin">
 				Login Here
@@ -212,6 +207,7 @@
 				<!-- CASE Gallery Flex END -->
 			</section>
 
+<!-- Flexbox section begin -->
 			<section> 
 				<div id="oFBSR" class="oalt2"> <br/><br/><br/></div>
 				<h4> FLEXBOXES </h4>
@@ -688,15 +684,98 @@
 				<!-- CASE 3 END -->
 				</div>
 				<!-- category end -->
+			</section>
+<!-- flexbox section end -->
 
+<!-- CSS ANIMATIONS Start-->
+			<section id="oCSS" class="container-fluid"> 
+				<h4> CSS ANIMATIONS</h4>
+				<div class="row w-100 pl-3 ">
+	<!-- Animaton 1 start -->
+					<div class="card border-secondary col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 m-2" >
+						<h5 class="card-title pt-1"> Glowy Button </h5>
+						<div class="card-header">
+							<div class="m-5 text-center oCSSAnimBox" id="oGlowButton">
+								Glowy Button
+							</div>
+						</div>
+						<p class="card-text pb-2">Declaration: 
+							<br/> animation: radiance 5s infinite; 
+							<br/>
+							<br/>@keyframes radiance { 
+							<br/>0% {box-shadow: 0 0 15px #e6dada;} 
+							<br/>50% {box-shadow: 0 0 45px red;} 
+							<br/>100% {box-shadow: 0 0 15px #e6dada;} }
+  						</p>
+					</div>
+	<!-- animation 1 end -->
+
+	<!-- Animaton 2 start -->
+					<div class="card border-secondary col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 m-2" >
+						<h5 class="card-title pt-1"> Color Transitions </h5>
+						<div class="card-header">
+							<div class="m-5 text-center oCSSAnimBox" id="oColTrans">
+								Color Transition
+							</div>
+						</div>
+						<p class="card-text pb-2">Declaration: 	
+							<br/>animation: transButton 5s infinite;
+							<br/>
+							<br/>@keyframes transButton {
+							<br/>0% {background-color: #274046; color:white; border-color:white;}
+							<br/>50% {background-color: #e6dada; color:black; border-color:black}
+							<br/>100% {background-color: #274046; color:white; border-color:white} }
+  						</p>
+					</div>
+	<!-- animation 2 end -->
+
+	<!-- Animaton 3 start -->
+					<div class="card border-secondary col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 m-2" >
+						<h5 class="card-title pt-1"> Pulse </h5>
+						<div class="card-header">
+							<div class="m-5 text-center oCSSAnimBox" id="oPulse">
+								Pulse
+							</div>
+						</div>
+						<p class="card-text pb-2">Declaration: 	
+							<br/>animation: pulsing 1s infinite;
+							<br/>
+							<br/>@keyframes pulsing {
+							<br/>0%,100% {transform: scale(1);}
+							<br/>50% {transform: scale(1.5);}
+  						</p>
+					</div>
+	<!-- animation 3 end -->
+
+	<!-- Animaton 4 start -->
+					<div class="card border-secondary col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 m-2" >
+						<h5 class="card-title pt-1"> Moving </h5>
+						<div class="card-header">
+							<div class="m-5 text-center oCSSAnimBox" id="oMove">
+								Moving
+							</div>
+						</div>
+						<p class="card-text pb-2">
+							Declaration: 	
+							<br/>animation: moving 5s infinite;
+							<br/>
+							<br/>@keyframes moving {
+							<br/>0%,100% {transform: translate(0,0);}
+							<br/>50% {transform: translate(100px, 20px);}}
+  						</p>
+					</div>
+	<!-- animation 4 end -->
+
+
+
+
+				</div>
 
 			</section>
-
-			<section id="oCSS"> About </section>
+<!-- CSS ANIMATIONS End-->
 
 		</article>
 	</div>
-
 </div>
 
 <!-- bootstrap trigger button to modal start -->
@@ -748,7 +827,7 @@
 	    	</div>
 	  	</div>
 	</div>
-	<!-- bootstrap trigger button to modal end -->
+<!-- bootstrap trigger button to modal end -->
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

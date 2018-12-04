@@ -70,3 +70,50 @@ section {
 	border-radius: 0px !important;
 	border-bottom: 1px solid gray !important;
 }
+
+
+/*CSS ANIMATIONS*/
+.oCSSAnimBox {
+		width: 50%;
+		height:50%;
+		border-radius:15px;
+		margin: 10px auto;
+}
+
+#oGlowButton {
+		animation: radiance 5s infinite;
+}
+
+@keyframes radiance {  
+    0% {box-shadow: 0 0 15px #e6dada;} 
+    50% {box-shadow: 0 0 45px red;} 
+    100% {box-shadow: 0 0 15px #e6dada;} 
+ }
+
+#oColTrans {
+	animation: transButton 5s infinite;
+ }
+
+@keyframes transButton {
+	0% {background-color: #274046; color:white; border-color:white;}
+	50% {background-color: #e6dada; color:black; border-color:black}
+	100% {background-color: #274046; color:white; border-color:white}
+}
+
+#oPulse {
+	animation: pulsing 1s infinite;
+ }
+
+@keyframes pulsing {
+	0%,100% {transform: scale(1);}
+	50% {transform: scale(1.5);}
+}
+
+#oMove {
+	animation: moving 5s infinite;
+ }
+
+@keyframes moving {
+	0%,100% {transform: translate(0,0);}
+	50% {transform: translate(100px, 20px);}
+}
